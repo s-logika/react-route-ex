@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/footer'
 import Header from './components/header'
@@ -9,12 +10,15 @@ function App() {
 
   return (
     <>
-    <div className="main-container">
-    <Header />
-    <About />
-    <Contact />
-    <Footer /> 
-    </div>         
+    <BrowserRouter>
+     <Header />
+    <Routes>
+       <Route path="/" element={<Home/>}/>
+     <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+    </Routes>
+    <Footer />   
+     </BrowserRouter>         
     </>
   )
 }
