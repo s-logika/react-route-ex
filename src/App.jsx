@@ -1,11 +1,20 @@
 
 import './App.css'
+import Footer from './components/footer'
+import Header from './components/header'
+import About from './pages/about'
+import Contact from './pages/contact'
 
 function App() {
 
   return (
     <>
-    <h1>Basic react</h1>          
+    <div className="main-container">
+    <Header />
+    <About />
+    <Contact />
+    <Footer /> 
+    </div>         
     </>
   )
 }
