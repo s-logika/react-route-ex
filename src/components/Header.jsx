@@ -1,10 +1,11 @@
+import React from "react"
 import { Link } from "react-router-dom";
 
 function Header() {
-    return(
-        <>
-        <h1>header components</h1>
+    return (
+      
         <ul>
+            <div>
             <li>
                 <link to="/">Home</link>
             </li>
@@ -14,8 +15,9 @@ function Header() {
             <li>
                <link to="/contact">Contact</link>
             </li>
+            </div>
         </ul>
-        </>
-    );
+       
+    )
 }
 export default Header

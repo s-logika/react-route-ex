@@ -10,7 +10,7 @@ import NotFound from'./pages/NotFound';
 
 function App() {
   return (
-    <>
+   
       <BrowserRouter>
         <Header />
         <Routes>
@@ -18,13 +18,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
-
-            
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
-  );
+  
+  )
 }
 
 export default App
